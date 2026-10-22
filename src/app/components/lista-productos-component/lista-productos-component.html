@@ -1,0 +1,10 @@
+<h1>PRODUCTOS LISTA</h1>
+<ul>
+    @for (producto of listaProductos; track $index) {
+        <li>
+            <h2>{{producto.nombre}}</h2>
+            <p>{{producto.precio}}</p>
+            <img src="{{producto.imagen}}" alt="{{producto.nombre}}" style="width: 100px; height: 100px;">
+        </li>
+    }
+</ul>
