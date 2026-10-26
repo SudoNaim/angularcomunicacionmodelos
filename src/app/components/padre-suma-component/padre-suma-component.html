@@ -1,0 +1,8 @@
+<h1>Padre Suma Component</h1>
+Este componente llamará a sus componentes hijos los cuales le proprcionaran la cifra a sumar mediante un método, permitinedo la comunicación hijo-padre.
+<h3>El resultado de la suma es: {{mensaje}}</h3>
+
+<li>
+    <app-hijo-suma-component (sumarNumero)="sumarNumeros($event)" [numero]="5"></app-hijo-suma-component>
+    <app-hijo-suma-component (sumarNumero)="sumarNumeros($event)" [numero]="10"></app-hijo-suma-component>
+</li>
